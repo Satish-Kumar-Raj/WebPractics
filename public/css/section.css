@@ -1,0 +1,51 @@
+.service{
+    padding-top: 1vw;
+    text-align: center;
+    font-family: Gilroy;
+    
+}
+.service {
+    padding: 2vw;
+    display: grid;
+}
+.service .cardInfo{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 1vw;
+    
+
+}
+@media screen and (max-width:600px) {
+    .service .cardInfo{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:400px) {
+    .service .cardInfo{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+.cardInfo .card{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    padding: 1vw;
+    border-radius:2vw;
+    transition: all 0.2s ease;
+    perspective: 200px;
+}
+ .card:hover{
+    transform: scale(1.04) rotateY(-20deg);
+    
+}
+.card .cardIcon{
+    font-size: 3vw;
+    text-align: center;
+}
+.card .cardTitle{
+    font-size: 2vw;
+    font-family: gilroy;
+    font-weight: 500;
+}
